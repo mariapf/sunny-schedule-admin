@@ -36,12 +36,10 @@ class LocationController extends Controller
 
         $response = $this->locationRepository->findAll();
 
-        dd($response);
+        // dd($response);
 
         //TODO create view displaying the list of locations
-
-
-
+        return view('admin.locations', ['locations' => $response]);
     }
 
 
