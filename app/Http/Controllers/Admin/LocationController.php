@@ -34,6 +34,6 @@ class LocationController extends Controller
         // dd($response);
 
         //TODO create view displaying the list of locations
-        return view('admin.locations', ['locations' => $response->data]);
+        return view('admin.locations.index', ['locations' => $response->data]);
     }
 }
